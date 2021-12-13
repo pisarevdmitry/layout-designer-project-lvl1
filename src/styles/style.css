@@ -1,1 +1,61 @@
 /** CSS STYLE **/
+/**@font-face {
+  font-family: OpenSansLight;
+  src: url('../fonts/opensanslight.woff2') format('woff2'),
+       url('../fonts/opensanslight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: GilroyBold;
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+       url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}**/
+.white{
+  color:#fff;
+}
+.white-trans{
+  color: #d7ccc0;
+}
+.bright{
+  color: #f5f4f0;
+}
+.main{
+  color: #fe8a02;
+}
+.main-dark{
+  color: #42413c;
+}
+.dark{
+  color:  #2a2626;
+}
+.dark-trans{
+  color: #908d8b;
+}
+.brown {
+  color: #b09a81;
+}
+.blue{
+  color: #1085c5
+}
+h1,h2,h3 {
+  line-height: 1.2em;
+}
+.h1{
+  font-size: 72px;
+}
+.h2{
+  font-size: 60px;
+}
+.h3{
+  font-size: 34px;
+}
+.section {
+  padding: 100px 0 100px 0;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
