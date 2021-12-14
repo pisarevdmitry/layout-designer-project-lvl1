@@ -1,31 +1,33 @@
 /** CSS STYLE **/
-/**@font-face {
-  font-family: OpenSansLight;
-  src: url('../fonts/opensanslight.woff2') format('woff2'),
-       url('../fonts/opensanslight.woff') format('woff');
-  font-weight: 300;
+body{
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: Neucha;
+  src: url('../fonts/Neucha-Regular.ttf') format('woff');
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: GilroyBold;
-  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
-       url('../fonts/gilroyextrabold.woff') format('woff');
-  font-weight: 800;
+  font-family: OpenSans;
+  src: url('../fonts/OpenSans-Regular.ttf') format('woff');
+  font-weight: 400;
   font-style: normal;
-}**/
+}
 .white{
   color:#fff;
 }
 .white-trans{
   color: #d7ccc0;
 }
-.bright{
+.light{
   color: #f5f4f0;
 }
-.main{
+.primary{
   color: #fe8a02;
 }
-.main-dark{
+.primary-dark{
   color: #42413c;
 }
 .dark{
@@ -40,22 +42,83 @@
 .blue{
   color: #1085c5
 }
-h1,h2,h3 {
-  line-height: 1.2em;
+.text-main{
+  font-family: OpenSans;
+  font-size: 16px;
+  line-height: 25.6px;
 }
-.h1{
+h1,h2,h3 {
+  font-family: Neucha;
+  line-height: 1.2em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+h1{
   font-size: 72px;
 }
-.h2{
+h2{
   font-size: 60px;
 }
-.h3{
+h3{
   font-size: 34px;
 }
 .section {
   padding: 100px 0 100px 0;
 }
+.content{
+  position: relative;
+  z-index: 1000;
+}
+.section__bright{
+  background: #f5f4f0;
+}
+.section::before{
+  background: url('../images/background.png');
+  content: '';
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .container{
   max-width: 1100px;
   margin: 0 auto;
+}
+.header__picture{
+  height: 525px;
+  position: absolute;
+  top: -45px;
+  right: -273px;
+  z-index: 3;
+}
+.header__title{
+  position: relative;
+  z-index: 4;
+  margin-bottom: 185px;
+}
+.columns{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.column{
+  width: calc(50% - 15px);
+}
+.link{
+  text-decoration: none;
+  padding: 12px 24px 12px 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background: #fe8a02;
+}
+.header__link{
+  display: inline-block;
+  margin-top:25px ;
 }
