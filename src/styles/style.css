@@ -70,10 +70,10 @@ h3{
   position: relative;
   z-index: 1000;
 }
-.section__bright{
+.section_bright{
   background: #f5f4f0;
 }
-.section::before{
+.section_bg::before{
   background: url('../images/background.png');
   content: '';
   background-repeat: no-repeat;
@@ -121,4 +121,17 @@ h3{
 .header__link{
   display: inline-block;
   margin-top:25px ;
+}
+.text-center{
+  text-align: center;
+}
+.distortion{
+  display: flex;
+  margin-bottom: -200px;
+}
+.distortion__header{
+  margin-bottom: 30px;
+}
+.video{
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
