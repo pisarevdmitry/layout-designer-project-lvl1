@@ -1,7 +1,18 @@
 /** CSS STYLE **/
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
 body{
   padding: 0;
   margin: 0;
+}
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 @font-face {
   font-family: Neucha;
@@ -47,7 +58,7 @@ body{
   font-size: 16px;
   line-height: 25.6px;
 }
-h1,h2,h3 {
+h1,h2,h3, .text-header-3 {
   font-family: Neucha;
   line-height: 1.2em;
   font-weight: normal;
@@ -60,7 +71,7 @@ h1{
 h2{
   font-size: 60px;
 }
-h3{
+h3, .text-header-3{
   font-size: 34px;
 }
 .section {
@@ -72,6 +83,13 @@ h3{
 }
 .section_bright{
   background: #f5f4f0;
+}
+.section_dark{
+  background: #42413C;
+}
+.section_nav{
+  padding-top: 200px;
+  display: block;
 }
 .section_bg::before{
   background: url('../images/background.png');
@@ -128,10 +146,57 @@ h3{
 .distortion{
   display: flex;
   margin-bottom: -200px;
+  position: relative;
+  z-index: 2;
 }
 .distortion__header{
   margin-bottom: 30px;
 }
 .video{
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+.cards{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.card{
+  width: calc(33% - 20px);
+}
+.card:nth-child(-n+3) {
+  margin-bottom: 20px;
+}
+.title-card{
+  font-family: Neucha;
+  line-height: 1.2em;
+  font-weight: normal;
+  font-size: 54px;
+}
+.card__link{
+  display: flex;
+  flex-direction: column;
+}
+.card-item{
+  padding: 24px;
+  background: #f5f4f0;
+  cursor: pointer;
+}
+.card-item__header{
+  color: #fe8a02;
+}
+.card-item__text {
+  color: #2a2626;
+}
+.card-item:hover{
+  background: #fe8a02;
+}
+.card-item:hover .card-item__header, .card-item:hover .card-item__text, .card-item:hover .card-item__number{
+  color: #f5f4f0;
+}
+.card-item__number{
+  font-family: Neucha;
+  line-height: 1em;
+  font-weight: normal;
+  font-size: 64px;
+  margin-bottom: 40px;
 }
