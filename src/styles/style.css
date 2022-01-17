@@ -76,6 +76,7 @@ h3, .text-header-3{
 }
 .section {
   padding: 100px 0 100px 0;
+  position: relative;
 }
 .content{
   position: relative;
@@ -83,6 +84,7 @@ h3, .text-header-3{
 }
 .section_bright{
   background: #f5f4f0;
+  color: #2a2626;
 }
 .section_dark{
   background: #42413C;
@@ -91,7 +93,7 @@ h3, .text-header-3{
   padding-top: 200px;
   display: block;
 }
-.section_bg::before{
+.section_bg::after{
   background: url('../images/background.png');
   content: '';
   background-repeat: no-repeat;
@@ -127,6 +129,12 @@ h3, .text-header-3{
 }
 .column{
   width: calc(50% - 15px);
+}
+.column_image{
+  width: 578px;
+}
+.column_image-text{
+  width: calc(100% - 578px - 30px);
 }
 .link{
   text-decoration: none;
@@ -199,4 +207,34 @@ h3, .text-header-3{
   font-weight: normal;
   font-size: 64px;
   margin-bottom: 40px;
+}
+.image{
+  vertical-align: middle;
+}
+.distortion-text{
+  font-family: Neucha;
+  line-height: 1.2em;
+  font-size: 24px;
+  font-weight: normal;
+  color: #908d8b;
+}
+.distortion-desc{
+  font-family: Neucha;
+  line-height: 1.2em;
+  font-size: 34px;
+  font-weight: normal;
+}
+.text-separator{
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 28.8px;
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+.section_bright .text-separator{
+  background: #b09A81;
+  color: white;
 }
