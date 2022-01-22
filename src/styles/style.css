@@ -70,6 +70,10 @@ li {
   color: #1085c5;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .text-main {
   font-size: 16px;
   font-family: OpenSans, sans-serif;
@@ -335,4 +339,111 @@ h3,
   color: #b09a81;
 
   background: white;
+}
+
+.footer-feed {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 190px;
+  padding: 0 55px 0 55px;
+
+  color: white;
+
+  background: #42413c;
+}
+
+.footer-text {
+  width: 50%;
+}
+
+.footer-form {
+  width: 50%;
+}
+
+.form-name {
+  margin-bottom: 9px;
+
+  font-size: 18px;
+  font-family: OpenSans, sans-serif;
+  line-height: 25.6px;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.form-input {
+  flex-grow: 1;
+  height: 50px;
+  padding: 15px;
+  border: none;
+
+  font-size: 13px;
+  font-family: OpenSans, sans-serif;
+
+  outline: none;
+}
+
+.form-input::placeholder {
+  opacity: 0.8;
+}
+
+.form-submit {
+  position: relative;
+
+  width: 70px;
+  height: 50px;
+  border: none;
+
+  background: #fe8a02;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.form-submit::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url('../images/send.svg');
+  transform: translate(-50%, -50%);
+
+  content: '';
+}
+
+.form-note {
+  font-size: 12px;
+  font-family: OpenSans, sans-serif;
+  line-height: 19px;
+}
+
+.form-link {
+  color: white;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+
+  font-size: 12px;
+  font-family: OpenSans, sans-serif;
+
+  text-align: center;
+}
+
+.contacts-info {
+  margin-top: 16px;
+}
+
+.contacts-info:first-child {
+  margin-top: 0;
 }
