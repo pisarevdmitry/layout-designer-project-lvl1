@@ -227,6 +227,8 @@ h3,
 }
 
 .video {
+  margin-top: 14px;
+
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
