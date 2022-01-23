@@ -327,6 +327,10 @@ h3,
   text-transform: uppercase;
 }
 
+.distortion-text-portrait {
+  margin: 0;
+}
+
 .section-bright .text-separator {
   color: white;
 
