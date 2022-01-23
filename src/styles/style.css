@@ -12,14 +12,6 @@ body {
   padding: 0;
 }
 
-ul,
-li {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 @font-face {
   font-weight: 400;
   font-family: Neucha;
@@ -97,6 +89,7 @@ h1 {
 }
 
 h2 {
+  color: #fe8a02;
   font-size: 60px;
 }
 
@@ -232,6 +225,14 @@ h3,
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
+.cards,
+.card {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .cards {
   display: flex;
   flex-flow: row wrap;
@@ -346,8 +347,8 @@ h3,
   order: 2;
 }
 
-.section-brown .distortion-text {
-  color: #d7ccc0;
+.section-brown .distortion-name {
+  color: white;
 }
 
 .section-brown .text-separator {
