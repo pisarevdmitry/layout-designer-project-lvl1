@@ -256,6 +256,8 @@ h3,
 .card-link {
   display: flex;
   flex-direction: column;
+
+  color: #fe8a02;
 }
 
 .card-item {
@@ -270,6 +272,8 @@ h3,
 }
 
 .card-item-text {
+  margin-bottom: 0;
+
   color: #2a2626;
 }
 
